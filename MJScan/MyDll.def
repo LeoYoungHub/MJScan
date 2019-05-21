@@ -1,0 +1,7 @@
+LIBRARY "CppTester"
+
+EXPORTS
+
+selectedPoints @ 1
+
+cylinderFitting @ 2

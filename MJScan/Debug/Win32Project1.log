@@ -1,0 +1,46 @@
+﻿生成启动时间为 2019/5/21 17:30:15。
+     1>项目“C:\Users\繁星\Documents\Visual Studio 2013\Projects\Win32Project1\MJScan\Win32Project1.vcxproj”在节点 2 上(Rebuild 个目标)。
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(388,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (Win32Project1.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /IEigen /IC:\osg\include /Zi /nologo /W3 /WX- /MP /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D WIN32PROJECT1_EXPORTS /D _WINDLL /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt cylinderFitting.cpp CppTester.cpp
+     1>cl : 命令行 warning D9030: “/Gm”与多处理不兼容；忽略 /MP 开关
+         CppTester.cpp
+     1>c:\users\繁星\documents\visual studio 2013\projects\win32project1\mjscan\cylinderFitting.h(39): warning C4018: “<”: 有符号/无符号不匹配
+     1>c:\users\繁星\documents\visual studio 2013\projects\win32project1\mjscan\cylinderFitting.h(69): warning C4244: “=”: 从“const double”转换到“int”，可能丢失数据
+     1>CppTester.cpp(13): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : 参见“sprintf”的声明
+     1>CppTester.cpp(15): warning C4172: 返回局部变量或临时变量的地址
+     1>CppTester.cpp(69): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(112) : 参见“strcpy”的声明
+     1>CppTester.cpp(90): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : 参见“sprintf”的声明
+     1>CppTester.cpp(107): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : 参见“sprintf”的声明
+         cylinderFitting.cpp
+     1>c:\users\繁星\documents\visual studio 2013\projects\win32project1\mjscan\cylinderFitting.h(39): warning C4018: “<”: 有符号/无符号不匹配
+     1>c:\users\繁星\documents\visual studio 2013\projects\win32project1\mjscan\cylinderFitting.h(69): warning C4244: “=”: 从“const double”转换到“int”，可能丢失数据
+     1>cylinderFitting.cpp(22): warning C4018: “<”: 有符号/无符号不匹配
+     1>cylinderFitting.cpp(265): warning C4018: “<”: 有符号/无符号不匹配
+     1>cylinderFitting.cpp(273): warning C4018: “<”: 有符号/无符号不匹配
+     1>cylinderFitting.cpp(279): warning C4018: “<”: 有符号/无符号不匹配
+     1>cylinderFitting.cpp(374): warning C4018: “<”: 有符号/无符号不匹配
+     1>cylinderFitting.cpp(410): warning C4018: “<”: 有符号/无符号不匹配
+     1>cylinderFitting.cpp(449): warning C4018: “<”: 有符号/无符号不匹配
+     1>cylinderFitting.cpp(541): warning C4018: “<”: 有符号/无符号不匹配
+     1>cylinderFitting.cpp(573): warning C4018: “<”: 有符号/无符号不匹配
+         正在生成代码...
+     1>c:\users\繁星\documents\visual studio 2013\projects\win32project1\mjscan\cylinderfitting.cpp(173): warning C4715: “Sn3DAlgorithm::CylinderFitting::ransac_Lmeds_cylinder_fitting”: 不是所有的控件路径都返回值
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /IEigen /IC:\osg\include /Zi /nologo /W3 /WX- /MP /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D WIN32PROJECT1_EXPORTS /D _WINDLL /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt dllmain.cpp
+         dllmain.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\繁星\Documents\Visual Studio 2013\Projects\Win32Project1\Debug\MJScan.dll" /INCREMENTAL /NOLOGO C:\osg\lib\osgUtild.lib C:\osg\lib\osgDBd.lib C:\osg\lib\osgTextd.lib C:\osg\lib\osgViewerd.lib C:\osg\lib\osgGAd.lib C:\osg\lib\osgManipulatord.lib C:\osg\lib\osgAnimationd.lib C:\osg\lib\osgWidgetd.lib C:\osg\lib\osgShadowd.lib C:\osg\lib\osgd.lib C:\osg\lib\OpenThreadsd.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /DEF:"MyDll.def" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\繁星\Documents\Visual Studio 2013\Projects\Win32Project1\Debug\MJScan.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\繁星\Documents\Visual Studio 2013\Projects\Win32Project1\Debug\MJScan.lib" /MACHINE:X86 /DLL Debug\cylinderFitting.obj
+         Debug\dllmain.obj
+         Debug\CppTester.obj
+            正在创建库 C:\Users\繁星\Documents\Visual Studio 2013\Projects\Win32Project1\Debug\MJScan.lib 和对象 C:\Users\繁星\Documents\Visual Studio 2013\Projects\Win32Project1\Debug\MJScan.exp
+     1>MJScan.exp : warning LNK4070: .EXP 中的 /OUT:CppTester.dll 指令与输出文件名“C:\Users\繁星\Documents\Visual Studio 2013\Projects\Win32Project1\Debug\MJScan.dll”不同；忽略指令
+         Win32Project1.vcxproj -> C:\Users\繁星\Documents\Visual Studio 2013\Projects\Win32Project1\Debug\MJScan.dll
+     1>已完成生成项目“C:\Users\繁星\Documents\Visual Studio 2013\Projects\Win32Project1\MJScan\Win32Project1.vcxproj”(Rebuild 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:05.83
