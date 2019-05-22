@@ -4,4 +4,4 @@ EXPORTS
 
 selectedPoints @ 1
 
-cylinderFitting @ 2
+getTreatPoint @ 2

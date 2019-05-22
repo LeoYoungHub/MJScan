@@ -156,11 +156,13 @@
   <ItemGroup>
     <ClInclude Include="CppTester.h" />
     <ClInclude Include="cylinderFitting.h" />
+    <ClInclude Include="motionCorrection.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="cylinderFitting.cpp" />
+    <ClCompile Include="demo.cpp" />
     <ClCompile Include="dllmain.cpp">
       <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</CompileAsManaged>
       <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
@@ -176,6 +178,7 @@
       </PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="CppTester.cpp" />
+    <ClCompile Include="motionCorrection.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="MyDll.def" />

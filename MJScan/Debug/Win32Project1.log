@@ -1,24 +1,61 @@
-﻿生成启动时间为 2019/5/21 19:52:18。
-     1>项目“E:\MJScan\MJScan\Win32Project1.vcxproj”在节点 2 上(Rebuild 个目标)。
+﻿生成启动时间为 2019/5/22 11:34:21。
+     1>项目“E:\project\EinScanPro\pro\demo\MJScan\MJScan\Win32Project1.vcxproj”在节点 2 上(Rebuild 个目标)。
      1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(388,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (Win32Project1.vcxproj).  This can lead to incorrect clean and rebuild behavior.
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /IEigen /IC:\osg\include /Zi /nologo /W3 /WX- /MP /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D WIN32PROJECT1_EXPORTS /D _WINDLL /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt cylinderFitting.cpp CppTester.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /IEigen /IC:\osg\include /Zi /nologo /W3 /WX- /MP /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D WIN32PROJECT1_EXPORTS /D _WINDLL /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt cylinderFitting.cpp demo.cpp CppTester.cpp motionCorrection.cpp
      1>cl : 命令行 warning D9030: “/Gm”与多处理不兼容；忽略 /MP 开关
+         motionCorrection.cpp
+     1>motionCorrection.cpp(44): warning C4018: “<”: 有符号/无符号不匹配
+     1>motionCorrection.cpp(60): warning C4018: “<”: 有符号/无符号不匹配
+     1>motionCorrection.cpp(73): warning C4018: “<”: 有符号/无符号不匹配
+     1>motionCorrection.cpp(74): warning C4018: “<”: 有符号/无符号不匹配
+     1>motionCorrection.cpp(84): warning C4018: “<”: 有符号/无符号不匹配
+     1>motionCorrection.cpp(85): warning C4018: “<”: 有符号/无符号不匹配
+     1>motionCorrection.cpp(95): warning C4018: “<”: 有符号/无符号不匹配
+     1>motionCorrection.cpp(105): warning C4018: “<”: 有符号/无符号不匹配
+     1>motionCorrection.cpp(115): warning C4018: “<”: 有符号/无符号不匹配
+     1>motionCorrection.cpp(116): warning C4018: “<”: 有符号/无符号不匹配
+     1>motionCorrection.cpp(117): warning C4018: “<”: 有符号/无符号不匹配
+     1>motionCorrection.cpp(126): warning C4018: “<”: 有符号/无符号不匹配
+     1>motionCorrection.cpp(228): warning C4018: “<”: 有符号/无符号不匹配
+     1>motionCorrection.cpp(237): warning C4018: “<”: 有符号/无符号不匹配
+     1>motionCorrection.cpp(338): warning C4018: “<”: 有符号/无符号不匹配
+     1>motionCorrection.cpp(341): warning C4018: “<”: 有符号/无符号不匹配
+     1>motionCorrection.cpp(342): warning C4018: “<”: 有符号/无符号不匹配
+     1>motionCorrection.cpp(346): warning C4018: “<”: 有符号/无符号不匹配
+     1>motionCorrection.cpp(347): warning C4018: “<”: 有符号/无符号不匹配
+     1>motionCorrection.cpp(369): warning C4018: “<”: 有符号/无符号不匹配
+     1>motionCorrection.cpp(372): warning C4018: “<”: 有符号/无符号不匹配
+     1>motionCorrection.cpp(373): warning C4018: “<”: 有符号/无符号不匹配
+     1>motionCorrection.cpp(377): warning C4018: “<”: 有符号/无符号不匹配
+     1>motionCorrection.cpp(378): warning C4018: “<”: 有符号/无符号不匹配
+     1>motionCorrection.cpp(381): warning C4018: “<”: 有符号/无符号不匹配
+     1>motionCorrection.cpp(418): warning C4018: “<”: 有符号/无符号不匹配
+     1>motionCorrection.cpp(428): warning C4018: “<”: 有符号/无符号不匹配
+     1>motionCorrection.cpp(429): warning C4018: “<”: 有符号/无符号不匹配
+     1>motionCorrection.cpp(437): warning C4018: “<”: 有符号/无符号不匹配
          CppTester.cpp
-     1>e:\mjscan\mjscan\cylinderFitting.h(39): warning C4018: “<”: 有符号/无符号不匹配
-     1>e:\mjscan\mjscan\cylinderFitting.h(69): warning C4244: “=”: 从“const double”转换到“int”，可能丢失数据
-     1>CppTester.cpp(13): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>e:\project\einscanpro\pro\demo\mjscan\mjscan\cylinderFitting.h(39): warning C4018: “<”: 有符号/无符号不匹配
+     1>e:\project\einscanpro\pro\demo\mjscan\mjscan\cylinderFitting.h(69): warning C4244: “=”: 从“const double”转换到“int”，可能丢失数据
+     1>CppTester.cpp(14): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : 参见“sprintf”的声明
-     1>CppTester.cpp(15): warning C4172: 返回局部变量或临时变量的地址
+     1>CppTester.cpp(16): warning C4172: 返回局部变量或临时变量的地址
      1>CppTester.cpp(69): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(112) : 参见“strcpy”的声明
-     1>CppTester.cpp(90): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>CppTester.cpp(88): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : 参见“sprintf”的声明
-     1>CppTester.cpp(107): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : 参见“sprintf”的声明
+     1>CppTester.cpp(97): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(112) : 参见“strcpy”的声明
+     1>CppTester.cpp(99): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(204) : 参见“strtok”的声明
+     1>CppTester.cpp(103): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(204) : 参见“strtok”的声明
+     1>CppTester.cpp(199): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(112) : 参见“strcpy”的声明
+         demo.cpp
          cylinderFitting.cpp
-     1>e:\mjscan\mjscan\cylinderFitting.h(39): warning C4018: “<”: 有符号/无符号不匹配
-     1>e:\mjscan\mjscan\cylinderFitting.h(69): warning C4244: “=”: 从“const double”转换到“int”，可能丢失数据
+     1>e:\project\einscanpro\pro\demo\mjscan\mjscan\cylinderFitting.h(39): warning C4018: “<”: 有符号/无符号不匹配
+     1>e:\project\einscanpro\pro\demo\mjscan\mjscan\cylinderFitting.h(69): warning C4244: “=”: 从“const double”转换到“int”，可能丢失数据
      1>cylinderFitting.cpp(22): warning C4018: “<”: 有符号/无符号不匹配
      1>cylinderFitting.cpp(265): warning C4018: “<”: 有符号/无符号不匹配
      1>cylinderFitting.cpp(273): warning C4018: “<”: 有符号/无符号不匹配
@@ -29,18 +66,21 @@
      1>cylinderFitting.cpp(541): warning C4018: “<”: 有符号/无符号不匹配
      1>cylinderFitting.cpp(573): warning C4018: “<”: 有符号/无符号不匹配
          正在生成代码...
-     1>e:\mjscan\mjscan\cylinderfitting.cpp(173): warning C4715: “Sn3DAlgorithm::CylinderFitting::ransac_Lmeds_cylinder_fitting”: 不是所有的控件路径都返回值
+     1>e:\project\einscanpro\pro\demo\mjscan\mjscan\cylinderfitting.cpp(173): warning C4715: “Sn3DAlgorithm::CylinderFitting::ransac_Lmeds_cylinder_fitting”: 不是所有的控件路径都返回值
+     1>e:\project\einscanpro\pro\demo\mjscan\mjscan\cpptester.cpp(223): warning C4715: “getTreatPoint”: 不是所有的控件路径都返回值
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /IEigen /IC:\osg\include /Zi /nologo /W3 /WX- /MP /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D WIN32PROJECT1_EXPORTS /D _WINDLL /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt dllmain.cpp
          dllmain.cpp
        Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\MJScan\Debug\MJScan.dll" /INCREMENTAL /NOLOGO C:\osg\lib\osgUtild.lib C:\osg\lib\osgDBd.lib C:\osg\lib\osgTextd.lib C:\osg\lib\osgViewerd.lib C:\osg\lib\osgGAd.lib C:\osg\lib\osgManipulatord.lib C:\osg\lib\osgAnimationd.lib C:\osg\lib\osgWidgetd.lib C:\osg\lib\osgShadowd.lib C:\osg\lib\osgd.lib C:\osg\lib\OpenThreadsd.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /DEF:"MyDll.def" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:\MJScan\Debug\MJScan.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\MJScan\Debug\MJScan.lib" /MACHINE:X86 /DLL Debug\cylinderFitting.obj
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\project\EinScanPro\pro\demo\MJScan\Debug\MJScan.dll" /INCREMENTAL /NOLOGO C:\osg\lib\osgUtild.lib C:\osg\lib\osgDBd.lib C:\osg\lib\osgTextd.lib C:\osg\lib\osgViewerd.lib C:\osg\lib\osgGAd.lib C:\osg\lib\osgManipulatord.lib C:\osg\lib\osgAnimationd.lib C:\osg\lib\osgWidgetd.lib C:\osg\lib\osgShadowd.lib C:\osg\lib\osgd.lib C:\osg\lib\OpenThreadsd.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /DEF:"MyDll.def" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:\project\EinScanPro\pro\demo\MJScan\Debug\MJScan.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\project\EinScanPro\pro\demo\MJScan\Debug\MJScan.lib" /MACHINE:X86 /DLL Debug\cylinderFitting.obj
+         Debug\demo.obj
          Debug\dllmain.obj
          Debug\CppTester.obj
-            正在创建库 E:\MJScan\Debug\MJScan.lib 和对象 E:\MJScan\Debug\MJScan.exp
-     1>MJScan.exp : warning LNK4070: .EXP 中的 /OUT:CppTester.dll 指令与输出文件名“E:\MJScan\Debug\MJScan.dll”不同；忽略指令
-         Win32Project1.vcxproj -> E:\MJScan\Debug\MJScan.dll
-     1>已完成生成项目“E:\MJScan\MJScan\Win32Project1.vcxproj”(Rebuild 个目标)的操作。
+         Debug\motionCorrection.obj
+            正在创建库 E:\project\EinScanPro\pro\demo\MJScan\Debug\MJScan.lib 和对象 E:\project\EinScanPro\pro\demo\MJScan\Debug\MJScan.exp
+     1>MJScan.exp : warning LNK4070: .EXP 中的 /OUT:CppTester.dll 指令与输出文件名“E:\project\EinScanPro\pro\demo\MJScan\Debug\MJScan.dll”不同；忽略指令
+         Win32Project1.vcxproj -> E:\project\EinScanPro\pro\demo\MJScan\Debug\MJScan.dll
+     1>已完成生成项目“E:\project\EinScanPro\pro\demo\MJScan\MJScan\Win32Project1.vcxproj”(Rebuild 个目标)的操作。
 
 生成成功。
 
-已用时间 00:00:07.57
+已用时间 00:00:06.60
