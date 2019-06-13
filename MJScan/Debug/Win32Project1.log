@@ -1,8 +1,8 @@
-﻿生成启动时间为 2019/5/22 11:34:21。
-     1>项目“E:\project\EinScanPro\pro\demo\MJScan\MJScan\Win32Project1.vcxproj”在节点 2 上(Rebuild 个目标)。
+﻿生成启动时间为 2019/5/23 16:48:53。
+     1>项目“E:\project\EinScanPro\pro\demo\test\mjscangithub\MJScan\MJScan\Win32Project1.vcxproj”在节点 2 上(Rebuild 个目标)。
      1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(388,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (Win32Project1.vcxproj).  This can lead to incorrect clean and rebuild behavior.
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /IEigen /IC:\osg\include /Zi /nologo /W3 /WX- /MP /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D WIN32PROJECT1_EXPORTS /D _WINDLL /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt cylinderFitting.cpp demo.cpp CppTester.cpp motionCorrection.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /IC:\osg\include /IEigen /IC:\Qt\Qt5.9.5\5.9.5\msvc2013_64\include /IC:\Qt\Qt5.9.5\5.9.5\msvc2013_64\include\QtCore /I"C:\Qt\Qt5.9.5\5.9.5\msvc2013_64\.\mkspecs\win32-msvc" /IC:\Qt\Qt5.9.5\5.9.5\msvc2013_64\include\QtGui /IC:\Qt\Qt5.9.5\5.9.5\msvc2013_64\include\QtANGLE /IC:\Qt\Qt5.9.5\5.9.5\msvc2013_64\include\QtWidgets /Zi /nologo /W3 /WX- /MP /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D WIN32PROJECT1_EXPORTS /D _WINDLL /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt cylinderFitting.cpp demo.cpp CppTester.cpp motionCorrection.cpp
      1>cl : 命令行 warning D9030: “/Gm”与多处理不兼容；忽略 /MP 开关
          motionCorrection.cpp
      1>motionCorrection.cpp(44): warning C4018: “<”: 有符号/无符号不匹配
@@ -35,27 +35,27 @@
      1>motionCorrection.cpp(429): warning C4018: “<”: 有符号/无符号不匹配
      1>motionCorrection.cpp(437): warning C4018: “<”: 有符号/无符号不匹配
          CppTester.cpp
-     1>e:\project\einscanpro\pro\demo\mjscan\mjscan\cylinderFitting.h(39): warning C4018: “<”: 有符号/无符号不匹配
-     1>e:\project\einscanpro\pro\demo\mjscan\mjscan\cylinderFitting.h(69): warning C4244: “=”: 从“const double”转换到“int”，可能丢失数据
-     1>CppTester.cpp(14): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>e:\project\einscanpro\pro\demo\test\mjscangithub\mjscan\mjscan\cylinderFitting.h(39): warning C4018: “<”: 有符号/无符号不匹配
+     1>e:\project\einscanpro\pro\demo\test\mjscangithub\mjscan\mjscan\cylinderFitting.h(69): warning C4244: “=”: 从“const double”转换到“int”，可能丢失数据
+     1>CppTester.cpp(26): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : 参见“sprintf”的声明
-     1>CppTester.cpp(16): warning C4172: 返回局部变量或临时变量的地址
-     1>CppTester.cpp(69): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>CppTester.cpp(28): warning C4172: 返回局部变量或临时变量的地址
+     1>CppTester.cpp(81): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(112) : 参见“strcpy”的声明
-     1>CppTester.cpp(88): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>CppTester.cpp(100): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : 参见“sprintf”的声明
-     1>CppTester.cpp(97): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>CppTester.cpp(109): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(112) : 参见“strcpy”的声明
-     1>CppTester.cpp(99): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>CppTester.cpp(111): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(204) : 参见“strtok”的声明
-     1>CppTester.cpp(103): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>CppTester.cpp(115): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(204) : 参见“strtok”的声明
-     1>CppTester.cpp(199): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>CppTester.cpp(211): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(112) : 参见“strcpy”的声明
          demo.cpp
          cylinderFitting.cpp
-     1>e:\project\einscanpro\pro\demo\mjscan\mjscan\cylinderFitting.h(39): warning C4018: “<”: 有符号/无符号不匹配
-     1>e:\project\einscanpro\pro\demo\mjscan\mjscan\cylinderFitting.h(69): warning C4244: “=”: 从“const double”转换到“int”，可能丢失数据
+     1>e:\project\einscanpro\pro\demo\test\mjscangithub\mjscan\mjscan\cylinderFitting.h(39): warning C4018: “<”: 有符号/无符号不匹配
+     1>e:\project\einscanpro\pro\demo\test\mjscangithub\mjscan\mjscan\cylinderFitting.h(69): warning C4244: “=”: 从“const double”转换到“int”，可能丢失数据
      1>cylinderFitting.cpp(22): warning C4018: “<”: 有符号/无符号不匹配
      1>cylinderFitting.cpp(265): warning C4018: “<”: 有符号/无符号不匹配
      1>cylinderFitting.cpp(273): warning C4018: “<”: 有符号/无符号不匹配
@@ -66,21 +66,42 @@
      1>cylinderFitting.cpp(541): warning C4018: “<”: 有符号/无符号不匹配
      1>cylinderFitting.cpp(573): warning C4018: “<”: 有符号/无符号不匹配
          正在生成代码...
-     1>e:\project\einscanpro\pro\demo\mjscan\mjscan\cylinderfitting.cpp(173): warning C4715: “Sn3DAlgorithm::CylinderFitting::ransac_Lmeds_cylinder_fitting”: 不是所有的控件路径都返回值
-     1>e:\project\einscanpro\pro\demo\mjscan\mjscan\cpptester.cpp(223): warning C4715: “getTreatPoint”: 不是所有的控件路径都返回值
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /IEigen /IC:\osg\include /Zi /nologo /W3 /WX- /MP /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D WIN32PROJECT1_EXPORTS /D _WINDLL /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt dllmain.cpp
+     1>e:\project\einscanpro\pro\demo\test\mjscangithub\mjscan\mjscan\cylinderfitting.cpp(173): warning C4715: “Sn3DAlgorithm::CylinderFitting::ransac_Lmeds_cylinder_fitting”: 不是所有的控件路径都返回值
+     1>e:\project\einscanpro\pro\demo\test\mjscangithub\mjscan\mjscan\cpptester.cpp(235): warning C4715: “getTreatPoint”: 不是所有的控件路径都返回值
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /IC:\osg\include /IEigen /IC:\Qt\Qt5.9.5\5.9.5\msvc2013_64\include /IC:\Qt\Qt5.9.5\5.9.5\msvc2013_64\include\QtCore /I"C:\Qt\Qt5.9.5\5.9.5\msvc2013_64\.\mkspecs\win32-msvc" /IC:\Qt\Qt5.9.5\5.9.5\msvc2013_64\include\QtGui /IC:\Qt\Qt5.9.5\5.9.5\msvc2013_64\include\QtANGLE /IC:\Qt\Qt5.9.5\5.9.5\msvc2013_64\include\QtWidgets /Zi /nologo /W3 /WX- /MP /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D WIN32PROJECT1_EXPORTS /D _WINDLL /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt dllmain.cpp
          dllmain.cpp
        Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\project\EinScanPro\pro\demo\MJScan\Debug\MJScan.dll" /INCREMENTAL /NOLOGO C:\osg\lib\osgUtild.lib C:\osg\lib\osgDBd.lib C:\osg\lib\osgTextd.lib C:\osg\lib\osgViewerd.lib C:\osg\lib\osgGAd.lib C:\osg\lib\osgManipulatord.lib C:\osg\lib\osgAnimationd.lib C:\osg\lib\osgWidgetd.lib C:\osg\lib\osgShadowd.lib C:\osg\lib\osgd.lib C:\osg\lib\OpenThreadsd.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /DEF:"MyDll.def" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:\project\EinScanPro\pro\demo\MJScan\Debug\MJScan.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\project\EinScanPro\pro\demo\MJScan\Debug\MJScan.lib" /MACHINE:X86 /DLL Debug\cylinderFitting.obj
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\project\EinScanPro\pro\demo\test\mjscangithub\MJScan\Debug\MJScan.dll" /INCREMENTAL /NOLOGO C:\osg\lib\osgUtild.lib C:\osg\lib\osgDBd.lib C:\osg\lib\osgTextd.lib C:\osg\lib\osgViewerd.lib C:\osg\lib\osgGAd.lib C:\osg\lib\osgManipulatord.lib C:\osg\lib\osgAnimationd.lib C:\osg\lib\osgWidgetd.lib C:\osg\lib\osgShadowd.lib C:\osg\lib\osgd.lib C:\osg\lib\OpenThreadsd.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /DEF:"MyDll.def" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:\project\EinScanPro\pro\demo\test\mjscangithub\MJScan\Debug\MJScan.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\project\EinScanPro\pro\demo\test\mjscangithub\MJScan\Debug\MJScan.lib" /MACHINE:X86 /DLL Debug\cylinderFitting.obj
          Debug\demo.obj
          Debug\dllmain.obj
          Debug\CppTester.obj
          Debug\motionCorrection.obj
-            正在创建库 E:\project\EinScanPro\pro\demo\MJScan\Debug\MJScan.lib 和对象 E:\project\EinScanPro\pro\demo\MJScan\Debug\MJScan.exp
-     1>MJScan.exp : warning LNK4070: .EXP 中的 /OUT:CppTester.dll 指令与输出文件名“E:\project\EinScanPro\pro\demo\MJScan\Debug\MJScan.dll”不同；忽略指令
-         Win32Project1.vcxproj -> E:\project\EinScanPro\pro\demo\MJScan\Debug\MJScan.dll
-     1>已完成生成项目“E:\project\EinScanPro\pro\demo\MJScan\MJScan\Win32Project1.vcxproj”(Rebuild 个目标)的操作。
+            正在创建库 E:\project\EinScanPro\pro\demo\test\mjscangithub\MJScan\Debug\MJScan.lib 和对象 E:\project\EinScanPro\pro\demo\test\mjscangithub\MJScan\Debug\MJScan.exp
+     1>MJScan.exp : warning LNK4070: .EXP 中的 /OUT:CppTester.dll 指令与输出文件名“E:\project\EinScanPro\pro\demo\test\mjscangithub\MJScan\Debug\MJScan.dll”不同；忽略指令
+     1>CppTester.obj : error LNK2019: 无法解析的外部符号 "__declspec(dllimport) public: __thiscall QString::~QString(void)" (__imp_??1QString@@QAE@XZ)，该符号在函数 __catch$_selectedPoints@8$0 中被引用
+     1>CppTester.obj : error LNK2019: 无法解析的外部符号 "__declspec(dllimport) public: __thiscall QString::QString(char const *)" (__imp_??0QString@@QAE@PBD@Z)，该符号在函数 __catch$_selectedPoints@8$0 中被引用
+     1>CppTester.obj : error LNK2019: 无法解析的外部符号 "__declspec(dllimport) public: __thiscall QMatrix::QMatrix(void)" (__imp_??0QMatrix@@QAE@XZ)，该符号在函数 __catch$_selectedPoints@8$0 中被引用
+     1>CppTester.obj : error LNK2019: 无法解析的外部符号 "__declspec(dllimport) public: class QMatrix & __thiscall QMatrix::rotate(double)" (__imp_?rotate@QMatrix@@QAEAAV1@N@Z)，该符号在函数 __catch$_selectedPoints@8$0 中被引用
+     1>CppTester.obj : error LNK2019: 无法解析的外部符号 "__declspec(dllimport) public: __thiscall QImage::QImage(unsigned char *,int,int,enum QImage::Format,void (__cdecl*)(void *),void *)" (__imp_??0QImage@@QAE@PAEHHW4Format@0@P6AXPAX@Z2@Z)，该符号在函数 __catch$_selectedPoints@8$0 中被引用
+     1>CppTester.obj : error LNK2019: 无法解析的外部符号 "__declspec(dllimport) public: __thiscall QImage::QImage(unsigned char *,int,int,int,enum QImage::Format,void (__cdecl*)(void *),void *)" (__imp_??0QImage@@QAE@PAEHHHW4Format@0@P6AXPAX@Z2@Z)，该符号在函数 __catch$_selectedPoints@8$0 中被引用
+     1>CppTester.obj : error LNK2019: 无法解析的外部符号 "__declspec(dllimport) public: virtual __thiscall QImage::~QImage(void)" (__imp_??1QImage@@UAE@XZ)，该符号在函数 __catch$_selectedPoints@8$0 中被引用
+     1>CppTester.obj : error LNK2019: 无法解析的外部符号 "__declspec(dllimport) public: class QImage & __thiscall QImage::operator=(class QImage &&)" (__imp_??4QImage@@QAEAAV0@$$QAV0@@Z)，该符号在函数 __catch$_selectedPoints@8$0 中被引用
+     1>CppTester.obj : error LNK2019: 无法解析的外部符号 "__declspec(dllimport) public: class QImage __thiscall QImage::transformed(class QMatrix const &,enum Qt::TransformationMode)const " (__imp_?transformed@QImage@@QBE?AV1@ABVQMatrix@@W4TransformationMode@Qt@@@Z)，该符号在函数 __catch$_selectedPoints@8$0 中被引用
+     1>CppTester.obj : error LNK2019: 无法解析的外部符号 "__declspec(dllimport) public: class QImage __thiscall QImage::mirrored(bool,bool)const " (__imp_?mirrored@QImage@@QBE?AV1@_N0@Z)，该符号在函数 __catch$_selectedPoints@8$0 中被引用
+     1>CppTester.obj : error LNK2019: 无法解析的外部符号 "__declspec(dllimport) public: virtual __thiscall QPixmap::~QPixmap(void)" (__imp_??1QPixmap@@UAE@XZ)，该符号在函数 __catch$_selectedPoints@8$0 中被引用
+     1>CppTester.obj : error LNK2019: 无法解析的外部符号 "__declspec(dllimport) public: static class QPixmap __cdecl QPixmap::fromImage(class QImage const &,class QFlags<enum Qt::ImageConversionFlag>)" (__imp_?fromImage@QPixmap@@SA?AV1@ABVQImage@@V?$QFlags@W4ImageConversionFlag@Qt@@@@@Z)，该符号在函数 __catch$_selectedPoints@8$0 中被引用
+     1>CppTester.obj : error LNK2019: 无法解析的外部符号 "__declspec(dllimport) public: bool __thiscall QPixmap::save(class QString const &,char const *,int)const " (__imp_?save@QPixmap@@QBE_NABVQString@@PBDH@Z)，该符号在函数 __catch$_selectedPoints@8$0 中被引用
+     1>CppTester.obj : error LNK2019: 无法解析的外部符号 "__declspec(dllimport) public: __thiscall QPainter::QPainter(class QPaintDevice *)" (__imp_??0QPainter@@QAE@PAVQPaintDevice@@@Z)，该符号在函数 __catch$_selectedPoints@8$0 中被引用
+     1>CppTester.obj : error LNK2019: 无法解析的外部符号 "__declspec(dllimport) public: __thiscall QPainter::~QPainter(void)" (__imp_??1QPainter@@QAE@XZ)，该符号在函数 __catch$_selectedPoints@8$0 中被引用
+     1>CppTester.obj : error LNK2001: 无法解析的外部符号 "public: virtual int __thiscall QImage::devType(void)const " (?devType@QImage@@UBEHXZ)
+     1>CppTester.obj : error LNK2001: 无法解析的外部符号 "protected: virtual void __thiscall QPaintDevice::initPainter(class QPainter *)const " (?initPainter@QPaintDevice@@MBEXPAVQPainter@@@Z)
+     1>CppTester.obj : error LNK2001: 无法解析的外部符号 "protected: virtual int __thiscall QImage::metric(enum QPaintDevice::PaintDeviceMetric)const " (?metric@QImage@@MBEHW4PaintDeviceMetric@QPaintDevice@@@Z)
+     1>CppTester.obj : error LNK2001: 无法解析的外部符号 "public: virtual class QPaintEngine * __thiscall QImage::paintEngine(void)const " (?paintEngine@QImage@@UBEPAVQPaintEngine@@XZ)
+     1>CppTester.obj : error LNK2001: 无法解析的外部符号 "protected: virtual class QPaintDevice * __thiscall QPaintDevice::redirected(class QPoint *)const " (?redirected@QPaintDevice@@MBEPAV1@PAVQPoint@@@Z)
+     1>CppTester.obj : error LNK2001: 无法解析的外部符号 "protected: virtual class QPainter * __thiscall QPaintDevice::sharedPainter(void)const " (?sharedPainter@QPaintDevice@@MBEPAVQPainter@@XZ)
+     1>E:\project\EinScanPro\pro\demo\test\mjscangithub\MJScan\Debug\MJScan.dll : fatal error LNK1120: 21 个无法解析的外部命令
+     1>已完成生成项目“E:\project\EinScanPro\pro\demo\test\mjscangithub\MJScan\MJScan\Win32Project1.vcxproj”(Rebuild 个目标)的操作 - 失败。
 
-生成成功。
+生成失败。
 
-已用时间 00:00:06.60
+已用时间 00:00:08.76

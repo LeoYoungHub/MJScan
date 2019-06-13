@@ -34,6 +34,10 @@ int main()
 	readFile(coorPrefTcs, "robotPref.txt");				// 读入最佳成像点数据	
 	readFile(coorIni, "robotIni.txt");					// 读入当前机器人姿态的xyzabc。实际情况应读取PLC的数据块获得。
 	readFile(coorOffset, "robotOffset.txt");			// 读入机器人在工具坐标系下需要运动的xyzzbc。实际情况应由视觉软件给出。这部分xyzabc不包含校正量。
+	//**************************//
+	// 扫描器坐标系转换至机器人坐标系		20190613添加
+	coorOffset = scan2robot(coorOffset);
+	//*************************//
 
 	vec1D res;
 	coorPrefWcs = tcs2wcsPrefC(coorPrefTcs, tcs2wcs(coorOffset, coorIni));
@@ -89,7 +93,13 @@ int main()
 
 	vec1D coorOffsetPref(6, 0);
 	readFile(coorOffsetPref, "robotOffsetPref.txt");			// 读入机器人在工具坐标系下需要运动的xyzabc。实际情况应由视觉软件给出。这部分xyzabc不包含校正量。
-															
+						
+//**************************//
+	// 扫描器坐标系转换至机器人坐标系		20190613添加
+	coorOffsetPref = scan2robot(coorOffsetPref);
+//*************************//
+
+
 	vec1D coorCorr(6, 0);
 	coorCorr = getCorrectionAngle(coorOffsetPref);				// 计算校正量
 

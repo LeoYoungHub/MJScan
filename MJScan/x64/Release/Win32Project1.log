@@ -1,0 +1,17 @@
+﻿生成启动时间为 2019/5/24 15:01:33。
+     1>项目“E:\project\EinScanPro\pro\demo\test\mjscangithub\MJScan\MJScan\Win32Project1.vcxproj”在节点 2 上(Rebuild 个目标)。
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Oi /GL /D WIN32 /D NDEBUG /D _WINDOWS /D _USRDLL /D WIN32PROJECT1_EXPORTS /D _WINDLL /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"x64\Release\MJScan.pch" /Fo"x64\Release\\" /Fd"x64\Release\vc120.pdb" /Gd /TP /errorReport:prompt cylinderFitting.cpp demo.cpp CppTester.cpp motionCorrection.cpp
+         cylinderFitting.cpp
+     1>cylinderFitting.cpp(582): fatal error C1010: 在查找预编译头时遇到意外的文件结尾。是否忘记了向源中添加“#include "stdafx.h"”?
+         demo.cpp
+     1>demo.cpp(125): fatal error C1010: 在查找预编译头时遇到意外的文件结尾。是否忘记了向源中添加“#include "stdafx.h"”?
+         CppTester.cpp
+     1>CppTester.cpp(320): fatal error C1010: 在查找预编译头时遇到意外的文件结尾。是否忘记了向源中添加“#include "stdafx.h"”?
+         motionCorrection.cpp
+     1>motionCorrection.cpp(442): fatal error C1010: 在查找预编译头时遇到意外的文件结尾。是否忘记了向源中添加“#include "stdafx.h"”?
+     1>已完成生成项目“E:\project\EinScanPro\pro\demo\test\mjscangithub\MJScan\MJScan\Win32Project1.vcxproj”(Rebuild 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:00:00.43

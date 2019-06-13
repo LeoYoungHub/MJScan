@@ -1,0 +1,42 @@
+﻿生成启动时间为 2019/6/13 10:35:46。
+     1>项目“E:\project\EinScanPro\pro\demo\mjscangithub\MJScan\MJScan\Win32Project1.vcxproj”在节点 2 上(Rebuild 个目标)。
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /IEigen /IC:\Qt\Qt5.9.5\5.9.5\msvc2013_64\include\QtCore /IC:\Qt\Qt5.9.5\5.9.5\msvc2013_64\include\QtGui /IC:\Qt\Qt5.9.5\5.9.5\msvc2013_64\include /IC:\Qt\Qt5.9.5\5.9.5\msvc2013_64\include\QtANGLE /IC:\Qt\Qt5.9.5\5.9.5\msvc2013_64\include\QtWidgets /I"C:\Qt\Qt5.9.5\5.9.5\msvc2013_64\.\mkspecs\win32-msvc" /IC:\osg\include /Zi /nologo /W3 /WX- /MP /Od /Ob0 /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D WIN32PROJECT1_EXPORTS /D _WINDLL /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"x64\Debug\\" /Fd"x64\Debug\vc120.pdb" /Gd /TP /errorReport:prompt cylinderFitting.cpp demo.cpp CppTester.cpp motionCorrection.cpp
+     1>cl : 命令行 warning D9030: “/Gm”与多处理不兼容；忽略 /MP 开关
+         motionCorrection.cpp
+     1>motionCorrection.cpp(339): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+     1>motionCorrection.cpp(351): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+         CppTester.cpp
+     1>CppTester.cpp(26): warning C4172: 返回局部变量或临时变量的地址
+         demo.cpp
+         cylinderFitting.cpp
+     1>e:\project\einscanpro\pro\demo\mjscangithub\mjscan\mjscan\cylinderFitting.h(69): warning C4244: “=”: 从“const double”转换到“int”，可能丢失数据
+     1>e:\project\einscanpro\pro\demo\mjscangithub\mjscan\mjscan\cylinderFitting.h(202): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+     1>e:\project\einscanpro\pro\demo\mjscangithub\mjscan\mjscan\cylinderFitting.h(236): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+     1>cylinderFitting.cpp(23): warning C4244: “参数”: 从“unsigned __int64”转换到“const double”，可能丢失数据
+     1>cylinderFitting.cpp(273): warning C4018: “<”: 有符号/无符号不匹配
+     1>cylinderFitting.cpp(277): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+     1>cylinderFitting.cpp(278): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+     1>cylinderFitting.cpp(279): warning C4018: “<”: 有符号/无符号不匹配
+         正在生成代码...
+     1>e:\project\einscanpro\pro\demo\mjscangithub\mjscan\mjscan\cylinderfitting.cpp(173): warning C4715: “Sn3DAlgorithm::CylinderFitting::ransac_Lmeds_cylinder_fitting”: 不是所有的控件路径都返回值
+     1>e:\project\einscanpro\pro\demo\mjscangithub\mjscan\mjscan\cpptester.cpp(241): warning C4715: “getTreatPoint”: 不是所有的控件路径都返回值
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /IEigen /IC:\Qt\Qt5.9.5\5.9.5\msvc2013_64\include\QtCore /IC:\Qt\Qt5.9.5\5.9.5\msvc2013_64\include\QtGui /IC:\Qt\Qt5.9.5\5.9.5\msvc2013_64\include /IC:\Qt\Qt5.9.5\5.9.5\msvc2013_64\include\QtANGLE /IC:\Qt\Qt5.9.5\5.9.5\msvc2013_64\include\QtWidgets /I"C:\Qt\Qt5.9.5\5.9.5\msvc2013_64\.\mkspecs\win32-msvc" /IC:\osg\include /Zi /nologo /W3 /WX- /MP /Od /Ob0 /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D WIN32PROJECT1_EXPORTS /D _WINDLL /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"x64\Debug\\" /Fd"x64\Debug\vc120.pdb" /Gd /TP /errorReport:prompt dllmain.cpp
+         dllmain.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"E:\project\EinScanPro\pro\demo\mjscangithub\MJScan\x64\Debug\MJScan.dll" /INCREMENTAL /NOLOGO C:\osg\lib\osgUtild.lib C:\osg\lib\osgDBd.lib C:\osg\lib\osgTextd.lib C:\osg\lib\osgViewerd.lib C:\osg\lib\osgGAd.lib C:\osg\lib\osgManipulatord.lib C:\osg\lib\osgAnimationd.lib C:\osg\lib\osgWidgetd.lib C:\osg\lib\osgShadowd.lib C:\osg\lib\osgd.lib C:\osg\lib\OpenThreadsd.lib C:\Qt\Qt5.9.5\5.9.5\msvc2013_64\lib\Qt5Guid.lib C:\Qt\Qt5.9.5\5.9.5\msvc2013_64\lib\Qt5Cored.lib C:\Qt\Qt5.9.5\5.9.5\msvc2013_64\lib\Qt5Widgetsd.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /DEF:"MyDll.def" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:\project\EinScanPro\pro\demo\mjscangithub\MJScan\x64\Debug\MJScan.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\project\EinScanPro\pro\demo\mjscangithub\MJScan\x64\Debug\MJScan.lib" /MACHINE:X64 /DLL x64\Debug\cylinderFitting.obj
+         x64\Debug\demo.obj
+         x64\Debug\dllmain.obj
+         x64\Debug\CppTester.obj
+         x64\Debug\motionCorrection.obj
+     1>CppTester.obj : warning LNK4197: 多次指定导出“selectedPoints”；使用第一个规范
+     1>CppTester.obj : warning LNK4197: 多次指定导出“getTreatPoint”；使用第一个规范
+     1>CppTester.obj : warning LNK4197: 多次指定导出“createPixmap”；使用第一个规范
+            正在创建库 E:\project\EinScanPro\pro\demo\mjscangithub\MJScan\x64\Debug\MJScan.lib 和对象 E:\project\EinScanPro\pro\demo\mjscangithub\MJScan\x64\Debug\MJScan.exp
+     1>MJScan.exp : warning LNK4070: .EXP 中的 /OUT:CppTester.dll 指令与输出文件名“E:\project\EinScanPro\pro\demo\mjscangithub\MJScan\x64\Debug\MJScan.dll”不同；忽略指令
+         Win32Project1.vcxproj -> E:\project\EinScanPro\pro\demo\mjscangithub\MJScan\x64\Debug\MJScan.dll
+     1>已完成生成项目“E:\project\EinScanPro\pro\demo\mjscangithub\MJScan\MJScan\Win32Project1.vcxproj”(Rebuild 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:14.24

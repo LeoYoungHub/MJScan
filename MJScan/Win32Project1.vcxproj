@@ -36,7 +36,7 @@
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v120</PlatformToolset>
-    <CharacterSet>Unicode</CharacterSet>
+    <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
@@ -86,7 +86,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;WIN32PROJECT1_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>Eigen;C:\osg\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\osg\include;Eigen;C:\Qt\Qt5.9.5\5.9.5\msvc2013_64\include;C:\Qt\Qt5.9.5\5.9.5\msvc2013_64\include\QtCore;C:\Qt\Qt5.9.5\5.9.5\msvc2013_64\.\mkspecs\win32-msvc;C:\Qt\Qt5.9.5\5.9.5\msvc2013_64\include\QtGui;C:\Qt\Qt5.9.5\5.9.5\msvc2013_64\include\QtANGLE;C:\Qt\Qt5.9.5\5.9.5\msvc2013_64\include\QtWidgets;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
     </ClCompile>
@@ -107,13 +107,16 @@
       <AdditionalIncludeDirectories>Eigen;C:\Qt\Qt5.9.5\5.9.5\msvc2013_64\include\QtCore;C:\Qt\Qt5.9.5\5.9.5\msvc2013_64\include\QtGui;C:\Qt\Qt5.9.5\5.9.5\msvc2013_64\include;C:\Qt\Qt5.9.5\5.9.5\msvc2013_64\include\QtANGLE;C:\Qt\Qt5.9.5\5.9.5\msvc2013_64\include\QtWidgets;C:\Qt\Qt5.9.5\5.9.5\msvc2013_64\.\mkspecs\win32-msvc;C:\osg\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <CompileAs>CompileAsCpp</CompileAs>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ModuleDefinitionFile>MyDll.def</ModuleDefinitionFile>
       <AdditionalDependencies>C:\osg\lib\osgUtild.lib;C:\osg\lib\osgDBd.lib;C:\osg\lib\osgTextd.lib;C:\osg\lib\osgViewerd.lib;C:\osg\lib\osgGAd.lib;C:\osg\lib\osgManipulatord.lib;C:\osg\lib\osgAnimationd.lib;C:\osg\lib\osgWidgetd.lib;C:\osg\lib\osgShadowd.lib;C:\osg\lib\osgd.lib;C:\osg\lib\OpenThreadsd.lib;C:\Qt\Qt5.9.5\5.9.5\msvc2013_64\lib\Qt5Guid.lib;C:\Qt\Qt5.9.5\5.9.5\msvc2013_64\lib\Qt5Cored.lib;C:\Qt\Qt5.9.5\5.9.5\msvc2013_64\lib\Qt5Widgetsd.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <TargetMachine>MachineX86</TargetMachine>
+      <TargetMachine>MachineX64</TargetMachine>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">

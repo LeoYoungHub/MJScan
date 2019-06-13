@@ -7,6 +7,16 @@
 #include  "stdlib.h"
 #include "unsupported/Eigen/NumericalDiff"
 #include "unsupported/Eigen/NonLinearOptimization"
+#include <QtDebug>
+#include <QSharedMemory>
+#include <QMessageBox>
+#include <osg/ShapeDrawable>
+#include <QJsonObject>
+#include <QJsonDocument>
+#include <QFile>
+#include <QByteArray>
+#include <QProcess>
+#include <QBuffer>
 
 char* doubleToChar(double num)
 {
@@ -129,6 +139,8 @@ int _stdcall getTreatPoint(char* bestRef, char* kukaRef, char* scanRef, dPoints*
 	coorIni = split(kukaRef, " ");					// 读入当前机器人姿态的xyzabc。实际情况应读取PLC的数据块获得。
 	coorOffset = split(scanRef, " ");			// 读入机器人在工具坐标系下需要运动的xyzzbc。实际情况应由视觉软件给出。这部分xyzabc不包含校正量。
 
+	coorOffset = scan2robot(coorOffset);
+
 	vec1D res;
 	coorPrefWcs = tcs2wcsPrefC(coorPrefTcs, tcs2wcs(coorOffset, coorIni));
 
@@ -148,6 +160,12 @@ int _stdcall getTreatPoint(char* bestRef, char* kukaRef, char* scanRef, dPoints*
 
 		cout << "以下是与最佳点的偏差" << endl;
 		cout << "角度偏差：" << res[0] << "　位置偏差：" << res[1] << endl << endl;
+
+		for (auto i = 0; i < 6; i++)
+		{
+			char* a = doubleToChar(coorPrefWcs[i]);
+			strcpy(abutmentRef->point[i], a);
+		}// 根据校正量更新工具坐标系下的xyzabc
 
 		return 2;
 	}
@@ -220,4 +238,82 @@ int _stdcall getTreatPoint(char* bestRef, char* kukaRef, char* scanRef, dPoints*
 
 	//	cout << "误差允许范围内，可正常运行" << endl;
 	//}
+}
+
+void createPixmap(unsigned char* data, int width, int height, int channel, int rotate, uchar* imageP)
+{
+	int sizeColor = width * height * 3;
+	int sizeSingle = width * height * channel;
+	int byte_per_line = 0;
+	unsigned char* pDataColor = new unsigned char[sizeColor];
+	if (3 == channel)
+	{
+		byte_per_line = width*channel;
+		memcpy(pDataColor, data, sizeSingle);
+	}
+	else
+	{
+		for (int i = 0; i < sizeSingle; i++)
+		{
+			pDataColor[i * 3] = data[i];
+			pDataColor[i * 3 + 1] = data[i];
+			pDataColor[i * 3 + 2] = data[i];
+			if (data[i] > 230)
+			{
+				pDataColor[i * 3] = 255;
+				pDataColor[i * 3 + 1] = 0;
+				pDataColor[i * 3 + 2] = 0;
+			}
+		}// 显示红色 add by lzy
+	}
+
+	QMatrix left_matrix_;
+	left_matrix_.rotate(rotate);
+
+
+	QImage* image_ = 0;
+	if (byte_per_line > 0)
+		image_ = new QImage(pDataColor, width, height, byte_per_line, QImage::Format_RGB888);
+	else
+		image_ = new QImage(pDataColor, width, height, QImage::Format_RGB888);
+
+	if (width != 1280)
+		*image_ = image_->transformed(left_matrix_).mirrored(true); //sign 1121
+	else
+		*image_ = image_->transformed(left_matrix_); //sign 1121
+
+	QString imagePath =  "image.bmp";
+	image_->save(imagePath, "BMP");
+
+	cout << image_->byteCount() << endl;
+	memcpy(imageP, image_->bits(), image_->byteCount());
+
+	delete image_;
+	delete[]pDataColor;
+	pDataColor = NULL;
+}
+
+bool _stdcall createPixmap(char* key, int offset, int width, int height, int channel, int rotate, uchar* imageP)
+{
+	cout << offset << key << width << channel << height << rotate << endl;
+	QSharedMemory shm;
+	//QString str = QChar(*key);
+	shm.setNativeKey(key);
+	auto result = shm.attach(QSharedMemory::ReadWrite);
+	if (!result){
+		cout << "video1 memory:cannot attach to " << key << endl;
+		return false;
+	}
+
+	void *p = shm.data();
+	if (nullptr == p){
+		cout << "share memory Pointer is null\n" << endl;
+		return false;
+	}
+
+	cout << shm.size() <<" "<<shm.isAttached()<< endl;
+	auto data = static_cast<unsigned char*>(shm.data()) + offset;
+	
+	createPixmap(data, width, height, channel, rotate, imageP);
+	return true;
 }

@@ -251,6 +251,43 @@ vec1D scan2tcs(vec1D pipePoint, vec1D pipeNorm, vec1D toolPoint)
 	return matrix2coor(matrixTranspose(mat));
 }
 
+vec1D scan2robot(vec1D vecScan)
+{
+	vec2D mat(4, vec1D(4, 0));
+	vec1D vecRobot(6);
+	vec1D vec1(4);
+	vec1D vec2(4);
+
+	ifstream fid("robotShining.txt", ios::in);
+
+	for (auto i = 0; i < mat.size(); i++)
+		for (auto j = 0; j < mat[0].size(); j++)
+			fid >> mat[i][j];
+	fid.close();
+	
+	vec1[3] = 1;
+	for (auto i = 0; i < 3; i++) vec1[i] = vecScan[i];
+
+	vec2 = vecTranspose(matrixMultiply(mat, vecTranspose(vec1)));
+	for (auto i = 0; i < 3; i++) {
+		vecRobot[i] = vec2[i];
+		vec1[i] = vecScan[i + 3];
+	}
+
+	vec2 = vecTranspose(matrixMultiply(mat, vecTranspose(vec1)));
+	for (auto i = 0; i < 3; i++) {
+		vecRobot[i+3] = vec2[i];
+		vec1[i] = 0;
+	}
+
+	vec2 = vecTranspose(matrixMultiply(mat, vecTranspose(vec1)));
+	for (auto i = 0; i < 3; i++) {
+		vecRobot[i + 3] -= vec2[i];
+	}
+
+	return vecRobot;
+}
+
 vec1D tcs2wcs(vec1D coorOffset, vec1D coorIni)
 {
 	/*
@@ -415,8 +452,8 @@ vec1D getResidual(vec1D coorFin, vec1D calFin)
 void readFile(vec1D &vec, string filename)
 {
 	ifstream fid(filename, ios::in);
-	for (auto i = 0; i < vec.size(); i++)
-		fid >> vec[i];
+
+	for (auto i = 0; i < vec.size(); i++) fid >> vec[i];
 
 	fid.close();
 }

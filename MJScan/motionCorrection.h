@@ -41,6 +41,7 @@ vec1D tcs2wcs(vec1D, vec1D);
 vec1D wcs2tcs(vec1D, vec1D);
 vec1D tcs2wcsPref(vec1D, vec1D);
 vec1D tcs2wcsPrefC(vec1D , vec1D);
+vec1D scan2robot(vec1D);
 //****************************************************************//
 // 机器人视觉校正相关
 //****************************************************************//
