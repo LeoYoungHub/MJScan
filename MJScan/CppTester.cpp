@@ -139,8 +139,6 @@ int _stdcall getTreatPoint(char* bestRef, char* kukaRef, char* scanRef, dPoints*
 	coorIni = split(kukaRef, " ");					// 读入当前机器人姿态的xyzabc。实际情况应读取PLC的数据块获得。
 	coorOffset = split(scanRef, " ");			// 读入机器人在工具坐标系下需要运动的xyzzbc。实际情况应由视觉软件给出。这部分xyzabc不包含校正量。
 
-	coorOffset = scan2robot(coorOffset);
-
 	vec1D res;
 	coorPrefWcs = tcs2wcsPrefC(coorPrefTcs, tcs2wcs(coorOffset, coorIni));
 
@@ -315,5 +313,21 @@ bool _stdcall createPixmap(char* key, int offset, int width, int height, int cha
 	auto data = static_cast<unsigned char*>(shm.data()) + offset;
 	
 	createPixmap(data, width, height, channel, rotate, imageP);
+	return true;
+}
+
+bool _stdcall Scan2Robot(char* scanPoint, dPoints* robotPoint)
+{
+	vec1D coorOffset(6, 0);		// 视觉软件计算出的发送结果（不包含校正量）
+
+	coorOffset = split(scanPoint, " ");			// 读入机器人在工具坐标系下需要运动的xyzzbc。实际情况应由视觉软件给出。这部分xyzabc不包含校正量。
+
+	coorOffset = scan2robot(coorOffset);
+
+	for (auto i = 0; i < 6; i++)
+	{
+		char* a = doubleToChar(coorOffset[i]);
+		strcpy(robotPoint->point[i], a);
+	}// 根据校正量更新工具坐标系下的xyzabc
 	return true;
 }

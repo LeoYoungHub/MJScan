@@ -7,3 +7,5 @@ selectedPoints @ 1
 getTreatPoint @ 2
 
 createPixmap @ 3
+
+Scan2Robot @ 4

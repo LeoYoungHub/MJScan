@@ -27,3 +27,4 @@ struct dPoints
 extern "C" _declspec(dllexport)  bool _stdcall selectedPoints(char* path, points* outStr);
 extern "C" _declspec(dllexport) int _stdcall getTreatPoint(char* bestRef, char* kukaRef, char* scanRef, dPoints* abutmentRef);
 extern "C" _declspec(dllexport) bool _stdcall createPixmap(char* key, int offset, int width, int height, int channel, int rotate, uchar* imageP);
+extern "C" _declspec(dllexport) bool Scan2Robot(char* scanPoint, dPoints* robotPoint);
