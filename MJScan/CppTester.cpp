@@ -118,7 +118,7 @@ vector<double> split(const string &str, const string &pattern)
 	return resultVec;
 }
 
-int _stdcall getTreatPoint(char* bestRef, char* kukaRef, char* scanRef, dPoints* abutmentRef)
+int _stdcall getTreatPoint(char* bestRef, char* kukaRef, char* scanRef,bool isBestPoint, dPoints* abutmentRef)
 {
 	//	1. 点击“前往起始点”按钮，让机器人前往预设好的位置。			用机器人已有指令实现。
 	//	2. 放置海绵等操作。										不涉及软件。
@@ -144,7 +144,7 @@ int _stdcall getTreatPoint(char* bestRef, char* kukaRef, char* scanRef, dPoints*
 
 	res = getResidual(coorPrefTcs, coorOffset);
 
-	if (res[0] > 4 || res[1] > 10)						// 这个数值需要进一步测试定下来，暂定4和10
+	if (!isBestPoint &&( res[0] > 4 || res[1] > 10))						// 这个数值需要进一步测试定下来，暂定4和10
 	{
 		cout << "偏离最佳成像区域，请点击前往最佳点" << endl << endl;
 
@@ -207,14 +207,20 @@ int _stdcall getTreatPoint(char* bestRef, char* kukaRef, char* scanRef, dPoints*
 	outputVec(coorCorr);
 	cout << endl;
 
+
+
 	for (auto i = 0; i < 6; i++)
 	{
 		coorOffset[i] += coorCorr[i];
-
-		char* a = doubleToChar(coorOffset[i]);
-		strcpy(abutmentRef->point[i], a);
 	}// 根据校正量更新工具坐标系下的xyzabc
 	
+	coorOffset=tcs2wcs(coorOffset, coorIni);
+
+	for (auto i = 0; i < 6; i++)
+	{
+		char* a = doubleToChar(coorOffset[i]);
+		strcpy(abutmentRef->point[i], a);
+	}
 	//// 如若希望在得到世界坐标系下的xyzabc，请使用tcs2wcs(coorOffsetPref, coorPrefWcs)														
 
 	//res = getResidual(coorBase, tcs2wcs(coorOffsetPref, coorPrefWcs));				// 计算剩余量，剩余量的计算中自带了世界坐标系的转换

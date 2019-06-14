@@ -1,4 +1,4 @@
-﻿生成启动时间为 2019/6/13 15:23:09。
+﻿生成启动时间为 2019/6/14 15:28:01。
      1>项目“E:\project\EinScanPro\pro\demo\mjscangithub\MJScan\MJScan\Win32Project1.vcxproj”在节点 2 上(Rebuild 个目标)。
      1>ClCompile:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /IEigen /IC:\Qt\Qt5.9.5\5.9.5\msvc2013_64\include\QtCore /IC:\Qt\Qt5.9.5\5.9.5\msvc2013_64\include\QtGui /IC:\Qt\Qt5.9.5\5.9.5\msvc2013_64\include /IC:\Qt\Qt5.9.5\5.9.5\msvc2013_64\include\QtANGLE /IC:\Qt\Qt5.9.5\5.9.5\msvc2013_64\include\QtWidgets /I"C:\Qt\Qt5.9.5\5.9.5\msvc2013_64\.\mkspecs\win32-msvc" /IC:\osg\include /Zi /nologo /W3 /WX- /MP /Od /Ob0 /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D WIN32PROJECT1_EXPORTS /D _WINDLL /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"x64\Debug\\" /Fd"x64\Debug\vc120.pdb" /Gd /TP /errorReport:prompt cylinderFitting.cpp demo.cpp CppTester.cpp motionCorrection.cpp
@@ -20,7 +20,7 @@
      1>cylinderFitting.cpp(279): warning C4018: “<”: 有符号/无符号不匹配
          正在生成代码...
      1>e:\project\einscanpro\pro\demo\mjscangithub\mjscan\mjscan\cylinderfitting.cpp(173): warning C4715: “Sn3DAlgorithm::CylinderFitting::ransac_Lmeds_cylinder_fitting”: 不是所有的控件路径都返回值
-     1>e:\project\einscanpro\pro\demo\mjscangithub\mjscan\mjscan\cpptester.cpp(239): warning C4715: “getTreatPoint”: 不是所有的控件路径都返回值
+     1>e:\project\einscanpro\pro\demo\mjscangithub\mjscan\mjscan\cpptester.cpp(245): warning C4715: “getTreatPoint”: 不是所有的控件路径都返回值
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /IEigen /IC:\Qt\Qt5.9.5\5.9.5\msvc2013_64\include\QtCore /IC:\Qt\Qt5.9.5\5.9.5\msvc2013_64\include\QtGui /IC:\Qt\Qt5.9.5\5.9.5\msvc2013_64\include /IC:\Qt\Qt5.9.5\5.9.5\msvc2013_64\include\QtANGLE /IC:\Qt\Qt5.9.5\5.9.5\msvc2013_64\include\QtWidgets /I"C:\Qt\Qt5.9.5\5.9.5\msvc2013_64\.\mkspecs\win32-msvc" /IC:\osg\include /Zi /nologo /W3 /WX- /MP /Od /Ob0 /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D WIN32PROJECT1_EXPORTS /D _WINDLL /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"x64\Debug\\" /Fd"x64\Debug\vc120.pdb" /Gd /TP /errorReport:prompt dllmain.cpp
          dllmain.cpp
        Link:
@@ -40,4 +40,4 @@
 
 生成成功。
 
-已用时间 00:00:14.29
+已用时间 00:00:14.79
